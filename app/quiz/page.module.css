@@ -61,6 +61,13 @@
   cursor: pointer;
  }
 
+ .selected {
+  border: 2px solid #ae7916ac;
+  color: #ffffffca;
+  
+  font-weight: 800;
+ }
+
 
 
  .qNumber{
