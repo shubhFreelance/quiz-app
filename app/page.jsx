@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.container}>
 
-      <h1>Hello...</h1>
+      <h1 className={styles.h1}>Investor Profile Survey: Understanding Your Investment Preferences</h1>
       <Link href="/quiz">
       <button className={styles.button}>
         Start Quiz

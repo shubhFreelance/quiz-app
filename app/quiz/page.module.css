@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .main {
     display: flex;
     flex-direction: column;
@@ -10,17 +13,21 @@
   .h1{
     font-size: 40px;
     margin-bottom: 50px;
+    font-family: nunito;
+    color: rgba(255, 98, 0, 0.716);
+
   }
 
 
  .card{
   display: flex;
   flex-direction: column;
-  border: 2px solid gray;
+  border: 2px solid rgba(134, 134, 134, 0.203);
   padding: 20px;
   width: 500px;
-  height: 500px;
+  height: 520px;
   border-radius: 30px;
+  box-shadow: #556766;
  }
  
 
@@ -36,6 +43,17 @@
   flex-direction: column;
  }
 
+ .questionTitle{
+  border: 2px solid #556766;
+  border-radius: 15px;
+  height: 100px;
+  padding:12px;
+  background-color: #274340;
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-family: poppins;
+ }
+
  .ul{
   margin-top: 30px;
   list-style: none;
@@ -46,12 +64,13 @@
  }
 
  .li{
-  border: 2px solid rgb(112, 112, 112);
+  border: 2px solid #556766;
   border-radius: 15px;
   height: 50px;
   align-items: center;
   padding: 12px;
   display: flex;
+  background-color: #DFDCBB;
   
   
  }
@@ -63,7 +82,7 @@
 
  .selected {
   border: 2px solid #ae7916ac;
-  color: #ffffffca;
+  color: #070707ca;
   
   font-weight: 800;
  }
@@ -77,11 +96,27 @@
  }
 
  .nextButton{
-  border: 2px solid rgb(27, 27, 44);
-  background-color: rgb(20, 20, 20);
+  border: 2px solid #b9550e61;
+  background-color: #DFDCBB;
+  font-size: 0.8rem;
+  font-weight: 600;
   width: 120px;
+  color: black;
   height: 40px;
   border-radius: 8px;
+ }
+ 
+ .reset{
+  border: 2px solid #b9550e61;
+  background-color: #DFDCBB;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 40px;
+  padding: 4px;
+  color: black;
+  
+  border-radius: 12px;
+  
  }
 
  .nextDisabled{
@@ -92,8 +127,10 @@
  
 
  .nextButton:hover{
-  background-color: rgb(181, 181, 181);
-  color: rgb(27, 27, 27);
+  background-color: #274340;
+  color: rgb(242, 242, 242);
+  border: 2px solid #b9550e61;
+  
  }
  .nextButton:hover:not([disabled]) {
   color: rgb(25, 25, 25);
@@ -108,3 +145,34 @@
  }
 
 
+/* Media query for screens up to 768px wide */
+@media (max-width: 768px) {
+
+  .main {
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    max-width:600px; 
+    height: auto; 
+    border-radius: 15px; 
+  }
+  .questionTitle{
+    border: 2px solid #556766;
+    border-radius: 15px;
+    height: 130px;
+    padding:12px;
+    background-color: #274340;
+    color: aliceblue;
+    font-size: 0.9rem;
+   }
+   .li{
+    font-size: 0.75rem;
+   }
+
+   .h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+   }  
+}
